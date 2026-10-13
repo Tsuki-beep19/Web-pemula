@@ -1,0 +1,100 @@
+/* Pengaturan Dasar Halaman */
+body {
+    background-color: #e2e8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Membuat elemen menumpuk ke bawah secara vertikal */
+    align-items: center;    /* Posisi di tengah layar */
+}
+
+/* Pengaturan Kotak Kartu untuk Setiap Bagian */
+header, section, footer {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px; /* Jarak antar kartu ke bawah */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+/* Styling Judul & Teks */
+header h1 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+header p, section p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #2563eb;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eff6ff;
+    padding-bottom: 5px;
+}
+
+/* Styling Daftar Hobi */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+/* Styling Tombol & Link */
+a, button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.3);
+}
+
+a:active, button:active {
+    background-color: #1d4ed8;
+    transform: scale(0.98);
+}
+
+/* Styling Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+/* Pembungkus Tombol menggunakan Flexbox */
+.button-container {
+    display: flex;                /* Mengaktifkan flexbox */
+    flex-direction: row;          /* Menyusun tombol ke samping (kiri ke kanan) */
+    justify-content: space-between; /* Memberi jarak merata di antara kedua tombol */
+    gap: 10px;                    /* Jarak spasi antar tombol */
+    margin-top: 10px;
+}
+
+/* Menyesuaikan ukuran tombol agar fleksibel di dalam container */
+.button-container button {
+    flex: 1;                      /* Membuat lebar kedua tombol membagi ruang sama rata */
+    margin-top: 0;                /* Menghapus margin bawaan sebelumnya */
+}
+

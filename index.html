@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Biodataku</title>
+    
+    <!-- Tambahkan baris di bawah ini untuk menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</>
+<body>
+
+    <!-- Bagian Utama / Header -->
+    <header>
+        <h1>Halo, Saya Pemrogram Pemula!</h1>
+    </header>
+
+    <hr>
+
+    <!-- Bagian Tentang Saya -->
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>Nama saya adalah seorang pembelajar mandiri yang antusias mengeksplorasi dunia <em>web development</em> menggunakan *smartphone*.</p>
+    </section>
+
+    <!-- Bagian Hobi / Daftar Favorit -->
+    <section>
+        <h2>Hobi & Ketertarikan</h2>
+        <ul>
+            <li>Ngoding di HP</li>
+            <li>Belajar Teknologi Baru</li>
+            <li>Eksplorasi Desain UI/UX</li>
+        </ul>
+    </section>
+
+    <!-- Bagian Kontak / Tautan -->
+    <section>
+        <h2>Hubungi Saya</h2>
+        <p>Kamu bisa temukan saya di:</p>
+        <a href="https://github.com" target="_blank">Kunjungi GitHub Saya</a>
+
+        <br><br>
+        <!-- Hapus onclick="..." karena sudah diatur di file script.js -->
+        <button id="sapaBtn">Klik Sapaan</button>
+    </section>
+    <!-- Bagian Tombol Aksi -->
+   <div class="button-container">
+       <button id="sapaBtn">Klik Sapaan</button>
+       <button onclick="alert('Tombol kedua diklik!')">Tombol Lain</button>
+   </div>
+  
+   <div style="text-align: center; margin-top: 20px;">
+    <p>Tombol sudah diklik: <span id="angka">0</span> kali</p>
+    <button id="hitungBtn">Tambah Angka</button>
+   </div>
+
+    <hr>
+
+    <!-- Footer / Catatan Kaki -->
+    <footer>
+        <p>&copy; 2026 - Dibuat dengan semangat belajar tinggi.</p>
+    </footer>
+    <!-- Hubungkan file JavaScript sebelum tag penutup body -->
+    <script src="script.js"></script>
+</body>
+</html>
